@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>linkml_renderer package &mdash; linkml-html 0.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="linkml_renderer.paths package" href="linkml_renderer.paths.html" />
+    <link rel="prev" title="linkml_renderer" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> linkml-html
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">linkml_renderer</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">linkml_renderer package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html">linkml_renderer.paths package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html">linkml_renderer.renderers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html">linkml_renderer.style package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-linkml_renderer.cli">linkml_renderer.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-linkml_renderer">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">linkml-html</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">linkml_renderer</a></li>
+      <li class="breadcrumb-item active">linkml_renderer package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/linkml_renderer.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="linkml-renderer-package">
+<h1>linkml_renderer package<a class="headerlink" href="#linkml-renderer-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="linkml_renderer.paths.html">linkml_renderer.paths package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.paths.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.paths.html#module-linkml_renderer.paths.context">linkml_renderer.paths.context module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context"><code class="docutils literal notranslate"><span class="pre">Context</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.current"><code class="docutils literal notranslate"><span class="pre">Context.current</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.current_element_type"><code class="docutils literal notranslate"><span class="pre">Context.current_element_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.extend"><code class="docutils literal notranslate"><span class="pre">Context.extend()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.in_collection"><code class="docutils literal notranslate"><span class="pre">Context.in_collection</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.in_object"><code class="docutils literal notranslate"><span class="pre">Context.in_object</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.in_object_reference"><code class="docutils literal notranslate"><span class="pre">Context.in_object_reference</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.index_extend"><code class="docutils literal notranslate"><span class="pre">Context.index_extend()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.schemaview"><code class="docutils literal notranslate"><span class="pre">Context.schemaview</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.set_root"><code class="docutils literal notranslate"><span class="pre">Context.set_root()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.source_path"><code class="docutils literal notranslate"><span class="pre">Context.source_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.source_path_str"><code class="docutils literal notranslate"><span class="pre">Context.source_path_str</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.target_depth"><code class="docutils literal notranslate"><span class="pre">Context.target_depth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.target_path"><code class="docutils literal notranslate"><span class="pre">Context.target_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context.target_path_str"><code class="docutils literal notranslate"><span class="pre">Context.target_path_str</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.ObjectPath"><code class="docutils literal notranslate"><span class="pre">ObjectPath</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.ObjectPath.append"><code class="docutils literal notranslate"><span class="pre">ObjectPath.append()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.ObjectPath.components"><code class="docutils literal notranslate"><span class="pre">ObjectPath.components</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.PathComponent"><code class="docutils literal notranslate"><span class="pre">PathComponent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.PathComponent.element_type"><code class="docutils literal notranslate"><span class="pre">PathComponent.element_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.PathComponent.index"><code class="docutils literal notranslate"><span class="pre">PathComponent.index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.PathComponent.root"><code class="docutils literal notranslate"><span class="pre">PathComponent.root</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.PathComponent.slot"><code class="docutils literal notranslate"><span class="pre">PathComponent.slot</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.paths.html#module-linkml_renderer.paths.html_context">linkml_renderer.paths.html_context module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext"><code class="docutils literal notranslate"><span class="pre">HTMLContext</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext.airium"><code class="docutils literal notranslate"><span class="pre">HTMLContext.airium</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext.target_path"><code class="docutils literal notranslate"><span class="pre">HTMLContext.target_path</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.paths.html#module-linkml_renderer.paths">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linkml_renderer.renderers.html">linkml_renderer.renderers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.renderers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.renderers.html#module-linkml_renderer.renderers.html_renderer">linkml_renderer.renderers.html_renderer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.anchor_id"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.anchor_id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_description_lists"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.elements_to_description_lists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_table"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.elements_to_table()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_tuples"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.elements_to_tuples()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_unordered_list"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.elements_to_unordered_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.generate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_atom"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.generate_atom()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_document"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.generate_document()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_object"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.generate_object()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_reference"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.generate_reference()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_tuple"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.generate_tuple()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.html_renderer.HTMLRenderer.render"><code class="docutils literal notranslate"><span class="pre">HTMLRenderer.render()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.renderers.html#module-linkml_renderer.renderers.markdown_renderer">linkml_renderer.renderers.markdown_renderer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownContext.markdown_writer"><code class="docutils literal notranslate"><span class="pre">MarkdownContext.markdown_writer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_description_lists"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.elements_to_description_lists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_table"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.elements_to_table()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_tuples"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.elements_to_tuples()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_unordered_list"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.elements_to_unordered_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.generate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_atom"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.generate_atom()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_document"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.generate_document()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_object"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.generate_object()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_reference"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.generate_reference()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_tuple"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.generate_tuple()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render"><code class="docutils literal notranslate"><span class="pre">MarkdownRenderer.render()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.block"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.block()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.h()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h1"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.h1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h2"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.h2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h3"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.h3()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.line"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.link"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.link()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.s"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.s</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.table_header"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.table_header()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.table_row"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.table_row()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.w"><code class="docutils literal notranslate"><span class="pre">MarkdownWriter.w()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.renderers.html#module-linkml_renderer.renderers.mermaid_renderer">linkml_renderer.renderers.mermaid_renderer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidContext"><code class="docutils literal notranslate"><span class="pre">MermaidContext</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidContext.mermaid_writer"><code class="docutils literal notranslate"><span class="pre">MermaidContext.mermaid_writer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.element_to_id"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer.element_to_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer.generate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate_document"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer.generate_document()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate_node"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer.generate_node()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.last_id"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer.last_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.render"><code class="docutils literal notranslate"><span class="pre">MermaidRenderer.render()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidWriter"><code class="docutils literal notranslate"><span class="pre">MermaidWriter</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.edge"><code class="docutils literal notranslate"><span class="pre">MermaidWriter.edge()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.entity"><code class="docutils literal notranslate"><span class="pre">MermaidWriter.entity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.header"><code class="docutils literal notranslate"><span class="pre">MermaidWriter.header()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.line"><code class="docutils literal notranslate"><span class="pre">MermaidWriter.line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.s"><code class="docutils literal notranslate"><span class="pre">MermaidWriter.s</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.renderers.html#module-linkml_renderer.renderers.renderer">linkml_renderer.renderers.renderer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.AttributeBlock"><code class="docutils literal notranslate"><span class="pre">AttributeBlock</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.AttributeBlock.attributes"><code class="docutils literal notranslate"><span class="pre">AttributeBlock.attributes</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.AttributeBlock.name"><code class="docutils literal notranslate"><span class="pre">AttributeBlock.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.AttributeBlock.title"><code class="docutils literal notranslate"><span class="pre">AttributeBlock.title</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.Renderer"><code class="docutils literal notranslate"><span class="pre">Renderer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.Renderer.attribute_blocks"><code class="docutils literal notranslate"><span class="pre">Renderer.attribute_blocks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.Renderer.ordered_slots"><code class="docutils literal notranslate"><span class="pre">Renderer.ordered_slots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.Renderer.render"><code class="docutils literal notranslate"><span class="pre">Renderer.render()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.Renderer.slots"><code class="docutils literal notranslate"><span class="pre">Renderer.slots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.renderers.html#linkml_renderer.renderers.renderer.Renderer.style_engine"><code class="docutils literal notranslate"><span class="pre">Renderer.style_engine</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.renderers.html#module-linkml_renderer.renderers">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linkml_renderer.style.html">linkml_renderer.style package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.style.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.style.html#module-linkml_renderer.style.model">linkml_renderer.style.model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Configuration"><code class="docutils literal notranslate"><span class="pre">Configuration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Configuration.frameworks"><code class="docutils literal notranslate"><span class="pre">Configuration.frameworks</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Configuration.include_diagrams"><code class="docutils literal notranslate"><span class="pre">Configuration.include_diagrams</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Configuration.rules"><code class="docutils literal notranslate"><span class="pre">Configuration.rules</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.ConfiguredBaseModel"><code class="docutils literal notranslate"><span class="pre">ConfiguredBaseModel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.HTMLFramework"><code class="docutils literal notranslate"><span class="pre">HTMLFramework</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.HTMLFramework.Bootstrap"><code class="docutils literal notranslate"><span class="pre">HTMLFramework.Bootstrap</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.HTMLFramework.Tailwind"><code class="docutils literal notranslate"><span class="pre">HTMLFramework.Tailwind</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.LineStyle"><code class="docutils literal notranslate"><span class="pre">LineStyle</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.LineStyle.DASHED"><code class="docutils literal notranslate"><span class="pre">LineStyle.DASHED</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.LineStyle.DOTTED"><code class="docutils literal notranslate"><span class="pre">LineStyle.DOTTED</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.LineStyle.DOUBLE"><code class="docutils literal notranslate"><span class="pre">LineStyle.DOUBLE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.LineStyle.SOLID"><code class="docutils literal notranslate"><span class="pre">LineStyle.SOLID</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType"><code class="docutils literal notranslate"><span class="pre">RenderElementType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.NO_ELEMENT"><code class="docutils literal notranslate"><span class="pre">RenderElementType.NO_ELEMENT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.TUPLE"><code class="docutils literal notranslate"><span class="pre">RenderElementType.TUPLE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.description_list"><code class="docutils literal notranslate"><span class="pre">RenderElementType.description_list</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.h1"><code class="docutils literal notranslate"><span class="pre">RenderElementType.h1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.h2"><code class="docutils literal notranslate"><span class="pre">RenderElementType.h2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.h3"><code class="docutils literal notranslate"><span class="pre">RenderElementType.h3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.heading"><code class="docutils literal notranslate"><span class="pre">RenderElementType.heading</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.simple_list"><code class="docutils literal notranslate"><span class="pre">RenderElementType.simple_list</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderElementType.table"><code class="docutils literal notranslate"><span class="pre">RenderElementType.table</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule"><code class="docutils literal notranslate"><span class="pre">RenderRule</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.applies_to_curies"><code class="docutils literal notranslate"><span class="pre">RenderRule.applies_to_curies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.applies_to_render_types"><code class="docutils literal notranslate"><span class="pre">RenderRule.applies_to_render_types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.applies_to_slots"><code class="docutils literal notranslate"><span class="pre">RenderRule.applies_to_slots</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.fstring"><code class="docutils literal notranslate"><span class="pre">RenderRule.fstring</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.name"><code class="docutils literal notranslate"><span class="pre">RenderRule.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.render_as"><code class="docutils literal notranslate"><span class="pre">RenderRule.render_as</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderRule.template"><code class="docutils literal notranslate"><span class="pre">RenderRule.template</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderType"><code class="docutils literal notranslate"><span class="pre">RenderType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderType.HTML"><code class="docutils literal notranslate"><span class="pre">RenderType.HTML</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderType.MARKDOWN"><code class="docutils literal notranslate"><span class="pre">RenderType.MARKDOWN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.RenderType.MERMAID"><code class="docutils literal notranslate"><span class="pre">RenderType.MERMAID</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Shape"><code class="docutils literal notranslate"><span class="pre">Shape</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Shape.CIRCLE"><code class="docutils literal notranslate"><span class="pre">Shape.CIRCLE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Shape.DIAMOND"><code class="docutils literal notranslate"><span class="pre">Shape.DIAMOND</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Shape.ROUNDED_SQUARE"><code class="docutils literal notranslate"><span class="pre">Shape.ROUNDED_SQUARE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Shape.SQUARE"><code class="docutils literal notranslate"><span class="pre">Shape.SQUARE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.WeakRefShimBaseModel"><code class="docutils literal notranslate"><span class="pre">WeakRefShimBaseModel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.style.html#module-linkml_renderer.style.style_engine">linkml_renderer.style.style_engine module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine"><code class="docutils literal notranslate"><span class="pre">StyleEngine</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.configuration"><code class="docutils literal notranslate"><span class="pre">StyleEngine.configuration</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.configure_slot"><code class="docutils literal notranslate"><span class="pre">StyleEngine.configure_slot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.configure_slots"><code class="docutils literal notranslate"><span class="pre">StyleEngine.configure_slots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.description_slot"><code class="docutils literal notranslate"><span class="pre">StyleEngine.description_slot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.schemaview"><code class="docutils literal notranslate"><span class="pre">StyleEngine.schemaview</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.slot_by_curie"><code class="docutils literal notranslate"><span class="pre">StyleEngine.slot_by_curie()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.slot_render_as"><code class="docutils literal notranslate"><span class="pre">StyleEngine.slot_render_as()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine.title_slot"><code class="docutils literal notranslate"><span class="pre">StyleEngine.title_slot()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linkml_renderer.style.html#module-linkml_renderer.style">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-linkml_renderer.cli">
+<span id="linkml-renderer-cli-module"></span><h2>linkml_renderer.cli module<a class="headerlink" href="#module-linkml_renderer.cli" title="Permalink to this heading"></a></h2>
+<p>Command line interface for linkml-html.</p>
+</section>
+<section id="module-linkml_renderer">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-linkml_renderer" title="Permalink to this heading"></a></h2>
+<p>linkml-html package.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="linkml_renderer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="linkml_renderer.paths.html" class="btn btn-neutral float-right" title="linkml_renderer.paths package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Harshad Hegde &lt;hhegde@lbl.gov&gt;.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

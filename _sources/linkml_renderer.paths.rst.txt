@@ -1,0 +1,29 @@
+linkml\_renderer.paths package
+==============================
+
+Submodules
+----------
+
+linkml\_renderer.paths.context module
+-------------------------------------
+
+.. automodule:: linkml_renderer.paths.context
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+linkml\_renderer.paths.html\_context module
+-------------------------------------------
+
+.. automodule:: linkml_renderer.paths.html_context
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: linkml_renderer.paths
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,31 @@
+linkml\_renderer package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   linkml_renderer.paths
+   linkml_renderer.renderers
+   linkml_renderer.style
+
+Submodules
+----------
+
+linkml\_renderer.cli module
+---------------------------
+
+.. automodule:: linkml_renderer.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: linkml_renderer
+   :members:
+   :undoc-members:
+   :show-inheritance:

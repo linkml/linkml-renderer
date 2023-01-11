@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>linkml_renderer.renderers package &mdash; linkml-html 0.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="linkml_renderer.style package" href="linkml_renderer.style.html" />
+    <link rel="prev" title="linkml_renderer.paths package" href="linkml_renderer.paths.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> linkml-html
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">linkml_renderer</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="linkml_renderer.html">linkml_renderer package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="linkml_renderer.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.paths.html">linkml_renderer.paths package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">linkml_renderer.renderers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linkml_renderer.style.html">linkml_renderer.style package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.html#module-linkml_renderer.cli">linkml_renderer.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linkml_renderer.html#module-linkml_renderer">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">linkml-html</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">linkml_renderer</a></li>
+          <li class="breadcrumb-item"><a href="linkml_renderer.html">linkml_renderer package</a></li>
+      <li class="breadcrumb-item active">linkml_renderer.renderers package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/linkml_renderer.renderers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="linkml-renderer-renderers-package">
+<h1>linkml_renderer.renderers package<a class="headerlink" href="#linkml-renderer-renderers-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-linkml_renderer.renderers.html_renderer">
+<span id="linkml-renderer-renderers-html-renderer-module"></span><h2>linkml_renderer.renderers.html_renderer module<a class="headerlink" href="#module-linkml_renderer.renderers.html_renderer" title="Permalink to this heading"></a></h2>
+<p>Rendering of LinkML instances as HTML.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.html_renderer.</span></span><span class="sig-name descname"><span class="pre">HTMLRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style_engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#linkml_renderer.renderers.renderer.Renderer" title="linkml_renderer.renderers.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<p>A renderer that generates HTML.</p>
+<p>To generate HTML for a YAMLRoot object, use the <a class="reference internal" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.render" title="linkml_renderer.renderers.html_renderer.HTMLRenderer.render"><code class="xref py py-func docutils literal notranslate"><span class="pre">render()</span></code></a> method:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_renderer.renderers.html_renderer</span> <span class="kn">import</span> <span class="n">HTMLRenderer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_runtime</span> <span class="kn">import</span> <span class="n">SchemaView</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">yaml</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sv</span> <span class="o">=</span> <span class="n">SchemaView</span><span class="p">(</span><span class="s1">&#39;my-schema.yaml&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">renderer</span> <span class="o">=</span> <span class="n">HTMLRenderer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my-instance.yaml&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">instance</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">sv</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>This method can be configured using a <a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.model.Configuration" title="linkml_renderer.style.model.Configuration"><code class="xref py py-class docutils literal notranslate"><span class="pre">Configuration</span></code></a> object</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_renderer.style.style_engine</span> <span class="kn">import</span> <span class="n">StyleEngine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">StyleEngine</span><span class="p">(</span><span class="n">sv</span><span class="p">,</span> <span class="n">configuration</span> <span class="o">=</span> <span class="n">my_config</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">renderer</span><span class="o">.</span><span class="n">style_engine</span> <span class="o">=</span> <span class="n">se</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.anchor_id">
+<span class="sig-name descname"><span class="pre">anchor_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.anchor_id" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_description_lists">
+<span class="sig-name descname"><span class="pre">elements_to_description_lists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_description_lists" title="Permalink to this definition"></a></dt>
+<dd><p>Generate description lists for a list of objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elements</strong> – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_table">
+<span class="sig-name descname"><span class="pre">elements_to_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_table" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML table for a list of objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elements</strong> – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_tuples">
+<span class="sig-name descname"><span class="pre">elements_to_tuples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_tuples" title="Permalink to this definition"></a></dt>
+<dd><p>Generate simple tuples for a list of objects.</p>
+<p>When writing tuples, the attributes/keys are omitted, as the position of the value is
+intended to be sufficient to identify it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elements</strong> – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_unordered_list">
+<span class="sig-name descname"><span class="pre">elements_to_unordered_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.elements_to_unordered_list" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML for a list of objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>indexed_elements</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.generate">
+<span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML for a YAMLRoot object.</p>
+<p>May be top level, in which case head/body tags are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_atom">
+<span class="sig-name descname"><span class="pre">generate_atom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_atom" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML for an atom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_document">
+<span class="sig-name descname"><span class="pre">generate_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_document" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML top level document for a YAMLRoot object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_object">
+<span class="sig-name descname"><span class="pre">generate_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_object" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML for an inner YAMLRoot object.</p>
+<p>Not top level, so no head/body tags are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_reference">
+<span class="sig-name descname"><span class="pre">generate_reference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_reference" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML for a reference.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.html_context.HTMLContext" title="linkml_renderer.paths.html_context.HTMLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_tuple">
+<span class="sig-name descname"><span class="pre">generate_tuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.generate_tuple" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.html_renderer.HTMLRenderer.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemaview</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_element_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.html_renderer.HTMLRenderer.render" title="Permalink to this definition"></a></dt>
+<dd><p>Dump a YAMLRoot object to HTML.</p>
+<p>The input may be a YAMLRoot object, a pydantic BaseModel, or a dict. It must conform
+to the LinkML schema provided via the schemaview argument.</p>
+<p>Passing in a source_element_name is optional if this can be inferred from the schema.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – instance to render</p></li>
+<li><p><strong>schemaview</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SchemaView</span></code>) – describes the structure of the instance to render</p></li>
+<li><p><strong>source_element_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – name of the element type the instance instantiates.</p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>HTML string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-linkml_renderer.renderers.markdown_renderer">
+<span id="linkml-renderer-renderers-markdown-renderer-module"></span><h2>linkml_renderer.renderers.markdown_renderer module<a class="headerlink" href="#module-linkml_renderer.renderers.markdown_renderer" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownContext">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.markdown_renderer.</span></span><span class="sig-name descname"><span class="pre">MarkdownContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schemaview=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_path=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_path=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">markdown_writer=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context" title="linkml_renderer.paths.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownContext.markdown_writer">
+<span class="sig-name descname"><span class="pre">markdown_writer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter" title="linkml_renderer.renderers.markdown_renderer.MarkdownWriter"><span class="pre">MarkdownWriter</span></a></em><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext.markdown_writer" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.markdown_renderer.</span></span><span class="sig-name descname"><span class="pre">MarkdownRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style_engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#linkml_renderer.renderers.renderer.Renderer" title="linkml_renderer.renderers.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<p>A renderer that generates Markdown.</p>
+<p>To generate Markdown for a LinkML object, use the <a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render" title="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render"><code class="xref py py-func docutils literal notranslate"><span class="pre">render()</span></code></a> method:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_renderer.renderers.html_renderer</span> <span class="kn">import</span> <span class="n">HTMLRenderer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_runtime</span> <span class="kn">import</span> <span class="n">SchemaView</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">yaml</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sv</span> <span class="o">=</span> <span class="n">SchemaView</span><span class="p">(</span><span class="s1">&#39;my-schema.yaml&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">renderer</span> <span class="o">=</span> <span class="n">MarkdownRenderer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my-instance.yaml&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">instance</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">sv</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_description_lists">
+<span class="sig-name descname"><span class="pre">elements_to_description_lists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_description_lists" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_table">
+<span class="sig-name descname"><span class="pre">elements_to_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_table" title="Permalink to this definition"></a></dt>
+<dd><p>Generate markdown table for a list of objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elements</strong> – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_tuples">
+<span class="sig-name descname"><span class="pre">elements_to_tuples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_tuples" title="Permalink to this definition"></a></dt>
+<dd><p>Generate simple tuples for a list of objects.</p>
+<p>When writing tuples, the attributes/keys are omitted, as the position of the value is
+intended to be sufficient to identify it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elements</strong> – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_unordered_list">
+<span class="sig-name descname"><span class="pre">elements_to_unordered_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indexed_elements</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.elements_to_unordered_list" title="Permalink to this definition"></a></dt>
+<dd><p>Generate Markdown for a list of objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>indexed_elements</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate">
+<span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate" title="Permalink to this definition"></a></dt>
+<dd><p>Generate markdown for a YAMLRoot object.</p>
+<p>May be top level, in which case head/body tags are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_atom">
+<span class="sig-name descname"><span class="pre">generate_atom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_atom" title="Permalink to this definition"></a></dt>
+<dd><p>Generate HTML for an atom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_document">
+<span class="sig-name descname"><span class="pre">generate_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_document" title="Permalink to this definition"></a></dt>
+<dd><p>Generate markdown top level document for a YAMLRoot object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_object">
+<span class="sig-name descname"><span class="pre">generate_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_object" title="Permalink to this definition"></a></dt>
+<dd><p>Generate markdown for an inner YAMLRoot object.</p>
+<p>Not top level, so no head/body tags are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_reference">
+<span class="sig-name descname"><span class="pre">generate_reference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_reference" title="Permalink to this definition"></a></dt>
+<dd><p>Generate Markdown for a reference.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownContext" title="linkml_renderer.renderers.markdown_renderer.MarkdownContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkdownContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_tuple">
+<span class="sig-name descname"><span class="pre">generate_tuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.generate_tuple" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemaview</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_element_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render" title="Permalink to this definition"></a></dt>
+<dd><p>Dump a YAMLRoot object to markdown.</p>
+<p>To generate HTML for a YAMLRoot object, use the <a class="reference internal" href="#linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render" title="linkml_renderer.renderers.markdown_renderer.MarkdownRenderer.render"><code class="xref py py-func docutils literal notranslate"><span class="pre">render()</span></code></a> method:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_renderer.renderers.html_renderer</span> <span class="kn">import</span> <span class="n">MarkdownRenderer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_runtime</span> <span class="kn">import</span> <span class="n">SchemaView</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">yaml</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sv</span> <span class="o">=</span> <span class="n">SchemaView</span><span class="p">(</span><span class="s1">&#39;my-schema.yaml&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">renderer</span> <span class="o">=</span> <span class="n">MarkdownRenderer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my-instance.yaml&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">instance</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">sv</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – LinkML instance to render</p></li>
+<li><p><strong>schemaview</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SchemaView</span></code>) – SchemaView which the element conforms to</p></li>
+<li><p><strong>source_element_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Root element name, inferred from tree_root if not present</p></li>
+<li><p><strong>kwargs</strong> – additional args</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Markdown string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.markdown_renderer.</span></span><span class="sig-name descname"><span class="pre">MarkdownWriter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.block">
+<span class="sig-name descname"><span class="pre">block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.block" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h">
+<span class="sig-name descname"><span class="pre">h</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h1">
+<span class="sig-name descname"><span class="pre">h1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h2">
+<span class="sig-name descname"><span class="pre">h2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h3">
+<span class="sig-name descname"><span class="pre">h3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.h3" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.line">
+<span class="sig-name descname"><span class="pre">line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.line" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.link">
+<span class="sig-name descname"><span class="pre">link</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.link" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.s">
+<span class="sig-name descname"><span class="pre">s</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StringIO</span></em><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.s" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.table_header">
+<span class="sig-name descname"><span class="pre">table_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.table_header" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.table_row">
+<span class="sig-name descname"><span class="pre">table_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.table_row" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.markdown_renderer.MarkdownWriter.w">
+<span class="sig-name descname"><span class="pre">w</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.markdown_renderer.MarkdownWriter.w" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-linkml_renderer.renderers.mermaid_renderer">
+<span id="linkml-renderer-renderers-mermaid-renderer-module"></span><h2>linkml_renderer.renderers.mermaid_renderer module<a class="headerlink" href="#module-linkml_renderer.renderers.mermaid_renderer" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidContext">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.mermaid_renderer.</span></span><span class="sig-name descname"><span class="pre">MermaidContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schemaview=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_path=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_path=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mermaid_writer=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidContext" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="linkml_renderer.paths.html#linkml_renderer.paths.context.Context" title="linkml_renderer.paths.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidContext.mermaid_writer">
+<span class="sig-name descname"><span class="pre">mermaid_writer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter" title="linkml_renderer.renderers.mermaid_renderer.MermaidWriter"><span class="pre">MermaidWriter</span></a></em><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidContext.mermaid_writer" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.mermaid_renderer.</span></span><span class="sig-name descname"><span class="pre">MermaidRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style_engine=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_to_id=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_id=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#linkml_renderer.renderers.renderer.Renderer" title="linkml_renderer.renderers.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<p>A renderer that generates mermaid.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.element_to_id">
+<span class="sig-name descname"><span class="pre">element_to_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.element_to_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate">
+<span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate" title="Permalink to this definition"></a></dt>
+<dd><p>Generate mermaid for a YAMLRoot object.</p>
+<p>May be top level, in which case head/body tags are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.mermaid_renderer.MermaidContext" title="linkml_renderer.renderers.mermaid_renderer.MermaidContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MermaidContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate_document">
+<span class="sig-name descname"><span class="pre">generate_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate_document" title="Permalink to this definition"></a></dt>
+<dd><p>Generate mermaid top level document for a YAMLRoot object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.mermaid_renderer.MermaidContext" title="linkml_renderer.renderers.mermaid_renderer.MermaidContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MermaidContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate_node">
+<span class="sig-name descname"><span class="pre">generate_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.generate_node" title="Permalink to this definition"></a></dt>
+<dd><p>Generate mermaid for an inner YAMLRoot object.</p>
+<p>Not top level, so no head/body tags are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>]) – </p></li>
+<li><p><strong>context</strong> (<a class="reference internal" href="#linkml_renderer.renderers.mermaid_renderer.MermaidContext" title="linkml_renderer.renderers.mermaid_renderer.MermaidContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">MermaidContext</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.last_id">
+<span class="sig-name descname"><span class="pre">last_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.last_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemaview</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_element_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.render" title="Permalink to this definition"></a></dt>
+<dd><p>Dump a YAMLRoot object to mermaid.</p>
+<p>To generate HTML for a YAMLRoot object, use the <a class="reference internal" href="#linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.render" title="linkml_renderer.renderers.mermaid_renderer.MermaidRenderer.render"><code class="xref py py-func docutils literal notranslate"><span class="pre">render()</span></code></a> method:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_renderer.renderers.html_renderer</span> <span class="kn">import</span> <span class="n">MarkdownRenderer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">linkml_runtime</span> <span class="kn">import</span> <span class="n">SchemaView</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">yaml</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sv</span> <span class="o">=</span> <span class="n">SchemaView</span><span class="p">(</span><span class="s1">&#39;my-schema.yaml&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">renderer</span> <span class="o">=</span> <span class="n">MermaidRenderer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my-instance.yaml&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">instance</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">sv</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – LinkML instance to render</p></li>
+<li><p><strong>schemaview</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SchemaView</span></code>) – SchemaView which the element conforms to</p></li>
+<li><p><strong>source_element_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Root element name, inferred from tree_root if not present</p></li>
+<li><p><strong>kwargs</strong> – additional args</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>mermaid serialization of the element as a string</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidWriter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.mermaid_renderer.</span></span><span class="sig-name descname"><span class="pre">MermaidWriter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidWriter.edge">
+<span class="sig-name descname"><span class="pre">edge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.edge" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidWriter.entity">
+<span class="sig-name descname"><span class="pre">entity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_side_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.entity" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidWriter.header">
+<span class="sig-name descname"><span class="pre">header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.header" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidWriter.line">
+<span class="sig-name descname"><span class="pre">line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.line" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.mermaid_renderer.MermaidWriter.s">
+<span class="sig-name descname"><span class="pre">s</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StringIO</span></em><a class="headerlink" href="#linkml_renderer.renderers.mermaid_renderer.MermaidWriter.s" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-linkml_renderer.renderers.renderer">
+<span id="linkml-renderer-renderers-renderer-module"></span><h2>linkml_renderer.renderers.renderer module<a class="headerlink" href="#module-linkml_renderer.renderers.renderer" title="Permalink to this heading"></a></h2>
+<p>Base class for renderers that render LinkML instances to a format such as HTML, Markdown, etc.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.AttributeBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.renderer.</span></span><span class="sig-name descname"><span class="pre">AttributeBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.renderer.AttributeBlock" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A block of attributes</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.AttributeBlock.attributes">
+<span class="sig-name descname"><span class="pre">attributes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">SlotDefinition</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#linkml_renderer.renderers.renderer.AttributeBlock.attributes" title="Permalink to this definition"></a></dt>
+<dd><p>Ordering of attributes within a block.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.AttributeBlock.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#linkml_renderer.renderers.renderer.AttributeBlock.name" title="Permalink to this definition"></a></dt>
+<dd><p>Name of the block. This may be the name of the slot group.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.AttributeBlock.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#linkml_renderer.renderers.renderer.AttributeBlock.title" title="Permalink to this definition"></a></dt>
+<dd><p>Display title for the block.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.Renderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linkml_renderer.renderers.renderer.</span></span><span class="sig-name descname"><span class="pre">Renderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style_engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.renderer.Renderer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Base class for engines that render LinkML instances to a format such as HTML, Markdown, etc.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.Renderer.attribute_blocks">
+<span class="sig-name descname"><span class="pre">attribute_blocks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.renderer.Renderer.attribute_blocks" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#linkml_renderer.renderers.renderer.AttributeBlock" title="linkml_renderer.renderers.renderer.AttributeBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeBlock</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.Renderer.ordered_slots">
+<span class="sig-name descname"><span class="pre">ordered_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.renderer.Renderer.ordered_slots" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">SlotDefinition</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.Renderer.render">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemaview</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_element_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.renderer.Renderer.render" title="Permalink to this definition"></a></dt>
+<dd><p>Render an element and all its children.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">YAMLRoot</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]) – LinkML instance to render</p></li>
+<li><p><strong>schemaview</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SchemaView</span></code>) – SchemaView which the element conforms to</p></li>
+<li><p><strong>source_element_name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Root element name, inferred from tree_root if not present</p></li>
+<li><p><strong>kwargs</strong> – additional args</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>rendering as a string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.Renderer.slots">
+<span class="sig-name descname"><span class="pre">slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linkml_renderer.renderers.renderer.Renderer.slots" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">SlotDefinition</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="linkml_renderer.renderers.renderer.Renderer.style_engine">
+<span class="sig-name descname"><span class="pre">style_engine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="linkml_renderer.style.html#linkml_renderer.style.style_engine.StyleEngine" title="linkml_renderer.style.style_engine.StyleEngine"><span class="pre">StyleEngine</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#linkml_renderer.renderers.renderer.Renderer.style_engine" title="Permalink to this definition"></a></dt>
+<dd><p>Configuration for mappings between schema elements and render engine elements.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-linkml_renderer.renderers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-linkml_renderer.renderers" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="linkml_renderer.paths.html" class="btn btn-neutral float-left" title="linkml_renderer.paths package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="linkml_renderer.style.html" class="btn btn-neutral float-right" title="linkml_renderer.style package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Harshad Hegde &lt;hhegde@lbl.gov&gt;.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
