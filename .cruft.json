@@ -1,0 +1,23 @@
+{
+  "template": "https://github.com/hrshdhgd/sphintoxetry-cookiecutter",
+  "commit": "2178e57e0567b44989336bfe032fd51f466e3164",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "linkml-renderer",
+      "__project_slug": "linkml_renderer",
+      "project_description": "Generating HTML and RDFa from LinkML data.",
+      "min_python_version": "3.7",
+      "file_name": "main",
+      "greeting_recipient": "World",
+      "full_name": "Harshad Hegde",
+      "email": "hhegde@lbl.gov",
+      "__author": "Harshad Hegde <hhegde@lbl.gov>",
+      "license": "Apache Software License 2.0",
+      "github_token_for_doc_deployment": "GH_TOKEN",
+      "github_token_for_pypi_deployment": "PYPI_TOKEN",
+      "_template": "https://github.com/hrshdhgd/sphintoxetry-cookiecutter"
+    }
+  },
+  "directory": null
+}

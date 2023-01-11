@@ -1,0 +1,8 @@
+include_diagrams: true
+rules:
+  - applies_to_slots:
+      - ontologyClass
+      - onset
+      - type
+      - diagnosis
+    render_as: TUPLE

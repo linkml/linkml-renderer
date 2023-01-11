@@ -1,0 +1,1741 @@
+id: obo:go/releases/2022-12-04/extensions/go-plus.owl-statistics
+ontologies:
+- id: obo:go/extensions/go-plus.owl
+  version: obo:go/releases/2022-12-04/extensions/go-plus.owl
+  version_info: '2022-12-04'
+partitions:
+  biological_process:
+    annotation_property_count: 0
+    class_count: 30501
+    class_count_by_subset:
+      obo:go#gocheck_do_not_annotate:
+        facet: obo:go#gocheck_do_not_annotate
+        filtered_count: 220
+      obo:go#gocheck_do_not_manually_annotate:
+        facet: obo:go#gocheck_do_not_manually_annotate
+        filtered_count: 73
+      obo:go#goslim_agr:
+        facet: obo:go#goslim_agr
+        filtered_count: 21
+      obo:go#goslim_candida:
+        facet: obo:go#goslim_candida
+        filtered_count: 38
+      obo:go#goslim_chembl:
+        facet: obo:go#goslim_chembl
+        filtered_count: 103
+      obo:go#goslim_drosophila:
+        facet: obo:go#goslim_drosophila
+        filtered_count: 101
+      obo:go#goslim_flybase_ribbon:
+        facet: obo:go#goslim_flybase_ribbon
+        filtered_count: 16
+      obo:go#goslim_generic:
+        facet: obo:go#goslim_generic
+        filtered_count: 75
+      obo:go#goslim_metagenomics:
+        facet: obo:go#goslim_metagenomics
+        filtered_count: 42
+      obo:go#goslim_mouse:
+        facet: obo:go#goslim_mouse
+        filtered_count: 14
+      obo:go#goslim_pir:
+        facet: obo:go#goslim_pir
+        filtered_count: 205
+      obo:go#goslim_plant:
+        facet: obo:go#goslim_plant
+        filtered_count: 46
+      obo:go#goslim_pombe:
+        facet: obo:go#goslim_pombe
+        filtered_count: 59
+      obo:go#goslim_synapse:
+        facet: obo:go#goslim_synapse
+        filtered_count: 225
+      obo:go#goslim_yeast:
+        facet: obo:go#goslim_yeast
+        filtered_count: 100
+      obo:go#prokaryote_subset:
+        facet: obo:go#prokaryote_subset
+        filtered_count: 50
+    class_count_with_text_definitions: 30501
+    class_count_without_text_definitions: 0
+    contributor_summary:
+      base64:Y2pt:
+        contributor_id: base64:Y2pt
+        contributor_name: cjm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 75
+      base64:Y2xz:
+        contributor_id: base64:Y2xz
+        contributor_name: cls
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 14
+      base64:Y3Zz:
+        contributor_id: base64:Y3Zz
+        contributor_name: cvs
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 5
+      base64:YW5z:
+        contributor_id: base64:YW5z
+        contributor_name: ans
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 24
+      base64:YWI=:
+        contributor_id: base64:YWI=
+        contributor_name: ab
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:YWU=:
+        contributor_id: base64:YWU=
+        contributor_name: ae
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 5
+      base64:YWg=:
+        contributor_id: base64:YWg=
+        contributor_name: ah
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 8
+      base64:YWk=:
+        contributor_id: base64:YWk=
+        contributor_name: ai
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 29
+      base64:YWw=:
+        contributor_id: base64:YWw=
+        contributor_name: al
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 202
+      base64:YWxz:
+        contributor_id: base64:YWxz
+        contributor_name: als
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 116
+      base64:Ym0=:
+        contributor_id: base64:Ym0=
+        contributor_name: bm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 12
+      base64:YmM=:
+        contributor_id: base64:YmM=
+        contributor_name: bc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 238
+      base64:YmY=:
+        contributor_id: base64:YmY=
+        contributor_name: bf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1730
+      base64:Ymht:
+        contributor_id: base64:Ymht
+        contributor_name: bhm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 57
+      base64:ZG9z:
+        contributor_id: base64:ZG9z
+        contributor_name: dos
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 105
+      base64:ZGdm:
+        contributor_id: base64:ZGdm
+        contributor_name: dgf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 31
+      base64:ZGdo:
+        contributor_id: base64:ZGdo
+        contributor_name: dgh
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:ZGhs:
+        contributor_id: base64:ZGhs
+        contributor_name: dhl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 119
+      base64:ZGk=:
+        contributor_id: base64:ZGk=
+        contributor_name: di
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 388
+      base64:ZGw=:
+        contributor_id: base64:ZGw=
+        contributor_name: dl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:ZHBo:
+        contributor_id: base64:ZHBo
+        contributor_name: dph
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1861
+      base64:ZHNm:
+        contributor_id: base64:ZHNm
+        contributor_name: dsf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 3
+      base64:ZHc=:
+        contributor_id: base64:ZHc=
+        contributor_name: dw
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 7
+      base64:ZWJj:
+        contributor_id: base64:ZWJj
+        contributor_name: ebc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 58
+      base64:ZWN1:
+        contributor_id: base64:ZWN1
+        contributor_name: ecu
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 8
+      base64:ZXM=:
+        contributor_id: base64:ZXM=
+        contributor_name: es
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 21
+      base64:ZXc=:
+        contributor_id: base64:ZXc=
+        contributor_name: ew
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:a212:
+        contributor_id: base64:a212
+        contributor_name: kmv
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 299
+      base64:a29t:
+        contributor_id: base64:a29t
+        contributor_name: kom
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 12
+      base64:a3Jj:
+        contributor_id: base64:a3Jj
+        contributor_name: krc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 330
+      base64:aGE=:
+        contributor_id: base64:aGE=
+        contributor_name: ha
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 4
+      base64:aGFs:
+        contributor_id: base64:aGFs
+        contributor_name: hal
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 6
+      base64:aGJ5ZQ==:
+        contributor_id: base64:aGJ5ZQ==
+        contributor_name: hbye
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 59
+      base64:aGpk:
+        contributor_id: base64:aGpk
+        contributor_name: hjd
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 281
+      base64:aHA=:
+        contributor_id: base64:aHA=
+        contributor_name: hp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 10
+      base64:amg=:
+        contributor_id: base64:amg=
+        contributor_name: jh
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 4
+      base64:amlk:
+        contributor_id: base64:amlk
+        contributor_name: jid
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 3
+      base64:amw=:
+        contributor_id: base64:amw=
+        contributor_name: jl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 799
+      base64:anA=:
+        contributor_id: base64:anA=
+        contributor_name: jp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:bGI=:
+        contributor_id: base64:bGI=
+        contributor_name: lb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 50
+      base64:bHI=:
+        contributor_id: base64:bHI=
+        contributor_name: lr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 10
+      base64:bW0y:
+        contributor_id: base64:bW0y
+        contributor_name: mm2
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 9
+      base64:bWFo:
+        contributor_id: base64:bWFo
+        contributor_name: mah
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1930
+      base64:bWNj:
+        contributor_id: base64:bWNj
+        contributor_name: mcc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 58
+      base64:bWVj:
+        contributor_id: base64:bWVj
+        contributor_name: mec
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 12
+      base64:bWw=:
+        contributor_id: base64:bWw=
+        contributor_name: ml
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 13
+      base64:bWxz:
+        contributor_id: base64:bWxz
+        contributor_name: mls
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:bXI=:
+        contributor_id: base64:bXI=
+        contributor_name: mr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 151
+      base64:bXM=:
+        contributor_id: base64:bXM=
+        contributor_name: ms
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 85
+      base64:bmM=:
+        contributor_id: base64:bmM=
+        contributor_name: nc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 118
+      base64:bmhu:
+        contributor_id: base64:bmhu
+        contributor_name: nhn
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:c2FydA==:
+        contributor_id: base64:c2FydA==
+        contributor_name: sart
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 28
+      base64:c2U=:
+        contributor_id: base64:c2U=
+        contributor_name: se
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 39
+      base64:c2pw:
+        contributor_id: base64:c2pw
+        contributor_name: sjp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 32
+      base64:c2w=:
+        contributor_id: base64:c2w=
+        contributor_name: sl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 600
+      base64:c3A=:
+        contributor_id: base64:c3A=
+        contributor_name: sp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 16
+      base64:c3M=:
+        contributor_id: base64:c3M=
+        contributor_name: ss
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 22
+      base64:cG0=:
+        contributor_id: base64:cG0=
+        contributor_name: pm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 39
+      base64:cGFk:
+        contributor_id: base64:cGFk
+        contributor_name: pad
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 71
+      base64:cGRl:
+        contributor_id: base64:cGRl
+        contributor_name: pde
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:cGY=:
+        contributor_id: base64:cGY=
+        contributor_name: pf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 11
+      base64:cGc=:
+        contributor_id: base64:cGc=
+        contributor_name: pg
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 338
+      base64:cGdh:
+        contributor_id: base64:cGdh
+        contributor_name: pga
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 85
+      base64:cHBt:
+        contributor_id: base64:cHBt
+        contributor_name: ppm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 11
+      base64:cHI=:
+        contributor_id: base64:cHI=
+        contributor_name: pr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 690
+      base64:cm4=:
+        contributor_id: base64:cm4=
+        contributor_name: rn
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 3
+      base64:cmI=:
+        contributor_id: base64:cmI=
+        contributor_name: rb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 35
+      base64:cmpk:
+        contributor_id: base64:cmpk
+        contributor_name: rjd
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 7
+      base64:cmw=:
+        contributor_id: base64:cmw=
+        contributor_name: rl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 302
+      base64:cnBo:
+        contributor_id: base64:cnBo
+        contributor_name: rph
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 160
+      base64:cnlubA==:
+        contributor_id: base64:cnlubA==
+        contributor_name: rynl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 36
+      base64:cno=:
+        contributor_id: base64:cno=
+        contributor_name: rz
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 38
+      base64:dGI=:
+        contributor_id: base64:dGI=
+        contributor_name: tb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1041
+      base64:dHQ=:
+        contributor_id: base64:dHQ=
+        contributor_name: tt
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 463
+      base64:dWg=:
+        contributor_id: base64:dWg=
+        contributor_name: uh
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:dms=:
+        contributor_id: base64:dms=
+        contributor_name: vk
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 128
+      base64:dnc=:
+        contributor_id: base64:dnc=
+        contributor_name: vw
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 251
+      base64:eW1i:
+        contributor_id: base64:eW1i
+        contributor_name: ymb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:eWFm:
+        contributor_id: base64:eWFm
+        contributor_name: yaf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 467
+    deprecated_class_count: 2540
+    deprecated_property_count: 0
+    distinct_synonym_count: 93063
+    edge_count_by_predicate:
+      BFO:0000050:
+        facet: BFO:0000050
+        filtered_count: 5025
+      BFO:0000051:
+        facet: BFO:0000051
+        filtered_count: 414
+      BFO:0000062:
+        facet: BFO:0000062
+        filtered_count: 1
+      BFO:0000063:
+        facet: BFO:0000063
+        filtered_count: 1
+      BFO:0000066:
+        facet: BFO:0000066
+        filtered_count: 350
+      RO:0000053:
+        facet: RO:0000053
+        filtered_count: 1
+      RO:0000057:
+        facet: RO:0000057
+        filtered_count: 90
+      RO:0002087:
+        facet: RO:0002087
+        filtered_count: 7
+      RO:0002090:
+        facet: RO:0002090
+        filtered_count: 4
+      RO:0002092:
+        facet: RO:0002092
+        filtered_count: 14
+      RO:0002093:
+        facet: RO:0002093
+        filtered_count: 1
+      RO:0002160:
+        facet: RO:0002160
+        filtered_count: 454
+      RO:0002162:
+        facet: RO:0002162
+        filtered_count: 335
+      RO:0002211:
+        facet: RO:0002211
+        filtered_count: 3451
+      RO:0002212:
+        facet: RO:0002212
+        filtered_count: 2992
+      RO:0002213:
+        facet: RO:0002213
+        filtered_count: 2984
+      RO:0002224:
+        facet: RO:0002224
+        filtered_count: 79
+      RO:0002230:
+        facet: RO:0002230
+        filtered_count: 34
+      RO:0002231:
+        facet: RO:0002231
+        filtered_count: 12
+      RO:0002232:
+        facet: RO:0002232
+        filtered_count: 9
+      RO:0002233:
+        facet: RO:0002233
+        filtered_count: 580
+      RO:0002234:
+        facet: RO:0002234
+        filtered_count: 101
+      RO:0002295:
+        facet: RO:0002295
+        filtered_count: 1
+      RO:0002296:
+        facet: RO:0002296
+        filtered_count: 766
+      RO:0002297:
+        facet: RO:0002297
+        filtered_count: 215
+      RO:0002298:
+        facet: RO:0002298
+        filtered_count: 393
+      RO:0002299:
+        facet: RO:0002299
+        filtered_count: 78
+      RO:0002315:
+        facet: RO:0002315
+        filtered_count: 333
+      RO:0002332:
+        facet: RO:0002332
+        filtered_count: 55
+      RO:0002334:
+        facet: RO:0002334
+        filtered_count: 1
+      RO:0002338:
+        facet: RO:0002338
+        filtered_count: 104
+      RO:0002339:
+        facet: RO:0002339
+        filtered_count: 283
+      RO:0002341:
+        facet: RO:0002341
+        filtered_count: 7
+      RO:0002342:
+        facet: RO:0002342
+        filtered_count: 53
+      RO:0002343:
+        facet: RO:0002343
+        filtered_count: 28
+      RO:0002344:
+        facet: RO:0002344
+        filtered_count: 19
+      RO:0002348:
+        facet: RO:0002348
+        filtered_count: 62
+      RO:0002349:
+        facet: RO:0002349
+        filtered_count: 25
+      RO:0002355:
+        facet: RO:0002355
+        filtered_count: 37
+      RO:0002356:
+        facet: RO:0002356
+        filtered_count: 37
+      RO:0002412:
+        facet: RO:0002412
+        filtered_count: 2
+      RO:0002505:
+        facet: RO:0002505
+        filtered_count: 83
+      RO:0002565:
+        facet: RO:0002565
+        filtered_count: 88
+      RO:0002588:
+        facet: RO:0002588
+        filtered_count: 318
+      RO:0002590:
+        facet: RO:0002590
+        filtered_count: 74
+      RO:0002591:
+        facet: RO:0002591
+        filtered_count: 10
+      RO:0002592:
+        facet: RO:0002592
+        filtered_count: 189
+      RO:0002608:
+        facet: RO:0002608
+        filtered_count: 66
+      RO:0004007:
+        facet: RO:0004007
+        filtered_count: 1301
+      RO:0004008:
+        facet: RO:0004008
+        filtered_count: 1223
+      RO:0004009:
+        facet: RO:0004009
+        filtered_count: 1662
+      RO:0012003:
+        facet: RO:0012003
+        filtered_count: 86
+      RO:0012008:
+        facet: RO:0012008
+        filtered_count: 34
+      RO:0019000:
+        facet: RO:0019000
+        filtered_count: 79
+      RO:0019001:
+        facet: RO:0019001
+        filtered_count: 17
+      RO:0019002:
+        facet: RO:0019002
+        filtered_count: 17
+      RO:0040036:
+        facet: RO:0040036
+        filtered_count: 2
+      obo:GOREL_0000040:
+        facet: obo:GOREL_0000040
+        filtered_count: 9
+      obo:GOREL_0002003:
+        facet: obo:GOREL_0002003
+        filtered_count: 6
+      obo:GOREL_0002004:
+        facet: obo:GOREL_0002004
+        filtered_count: 9
+      obo:GOREL_0012006:
+        facet: obo:GOREL_0012006
+        filtered_count: 14
+      rdfs:subClassOf:
+        facet: rdfs:subClassOf
+        filtered_count: 50885
+    equivalent_classes_axiom_count: 20171
+    id: biological_process
+    mapping_statement_count_by_predicate:
+      oio:hasDbXref:
+        facet: oio:hasDbXref
+        filtered_count: 1584
+    merged_class_query: 0
+    named_individual_count: 0
+    non_deprecated_class_count: 27961
+    object_property_count: 0
+    rdf_triple_count: 407155
+    subclass_of_axiom_count: 76476
+    subset_count: 16
+    synonym_statement_count: 93808
+    synonym_statement_count_by_predicate:
+      oio:hasBroadSynonym:
+        facet: oio:hasBroadSynonym
+        filtered_count: 1820
+      oio:hasExactSynonym:
+        facet: oio:hasExactSynonym
+        filtered_count: 65118
+      oio:hasNarrowSynonym:
+        facet: oio:hasNarrowSynonym
+        filtered_count: 15599
+      oio:hasRelatedSynonym:
+        facet: oio:hasRelatedSynonym
+        filtered_count: 10896
+  cellular_component:
+    annotation_property_count: 0
+    class_count: 4469
+    class_count_by_subset:
+      obo:go#gocheck_do_not_annotate:
+        facet: obo:go#gocheck_do_not_annotate
+        filtered_count: 61
+      obo:go#gocheck_do_not_manually_annotate:
+        facet: obo:go#gocheck_do_not_manually_annotate
+        filtered_count: 4
+      obo:go#goslim_agr:
+        facet: obo:go#goslim_agr
+        filtered_count: 16
+      obo:go#goslim_candida:
+        facet: obo:go#goslim_candida
+        filtered_count: 25
+      obo:go#goslim_chembl:
+        facet: obo:go#goslim_chembl
+        filtered_count: 39
+      obo:go#goslim_drosophila:
+        facet: obo:go#goslim_drosophila
+        filtered_count: 20
+      obo:go#goslim_flybase_ribbon:
+        facet: obo:go#goslim_flybase_ribbon
+        filtered_count: 15
+      obo:go#goslim_generic:
+        facet: obo:go#goslim_generic
+        filtered_count: 29
+      obo:go#goslim_metagenomics:
+        facet: obo:go#goslim_metagenomics
+        filtered_count: 34
+      obo:go#goslim_mouse:
+        facet: obo:go#goslim_mouse
+        filtered_count: 17
+      obo:go#goslim_pir:
+        facet: obo:go#goslim_pir
+        filtered_count: 174
+      obo:go#goslim_plant:
+        facet: obo:go#goslim_plant
+        filtered_count: 25
+      obo:go#goslim_synapse:
+        facet: obo:go#goslim_synapse
+        filtered_count: 97
+      obo:go#goslim_yeast:
+        facet: obo:go#goslim_yeast
+        filtered_count: 23
+      obo:go#prokaryote_subset:
+        facet: obo:go#prokaryote_subset
+        filtered_count: 15
+    class_count_with_text_definitions: 4469
+    class_count_without_text_definitions: 0
+    contributor_summary:
+      base64:Y2pt:
+        contributor_id: base64:Y2pt
+        contributor_name: cjm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:Y2xz:
+        contributor_id: base64:Y2xz
+        contributor_name: cls
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:YW1l:
+        contributor_id: base64:YW1l
+        contributor_name: ame
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 7
+      base64:YW5t:
+        contributor_id: base64:YW5t
+        contributor_name: anm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:YWk=:
+        contributor_id: base64:YWk=
+        contributor_name: ai
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:YWw=:
+        contributor_id: base64:YWw=
+        contributor_name: al
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 15
+      base64:Ym0=:
+        contributor_id: base64:Ym0=
+        contributor_name: bm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 20
+      base64:YmM=:
+        contributor_id: base64:YmM=
+        contributor_name: bc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 15
+      base64:YmY=:
+        contributor_id: base64:YmY=
+        contributor_name: bf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 193
+      base64:Ymht:
+        contributor_id: base64:Ymht
+        contributor_name: bhm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 229
+      base64:ZG9z:
+        contributor_id: base64:ZG9z
+        contributor_name: dos
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 69
+      base64:ZGhs:
+        contributor_id: base64:ZGhs
+        contributor_name: dhl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:ZHBo:
+        contributor_id: base64:ZHBo
+        contributor_name: dph
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 99
+      base64:ZXc=:
+        contributor_id: base64:ZXc=
+        contributor_name: ew
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:a212:
+        contributor_id: base64:a212
+        contributor_name: kmv
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 27
+      base64:a3Jj:
+        contributor_id: base64:a3Jj
+        contributor_name: krc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 82
+      base64:aGpk:
+        contributor_id: base64:aGpk
+        contributor_name: hjd
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 54
+      base64:amlk:
+        contributor_id: base64:amlk
+        contributor_name: jid
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:amw=:
+        contributor_id: base64:amw=
+        contributor_name: jl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 173
+      base64:bWFo:
+        contributor_id: base64:bWFo
+        contributor_name: mah
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 320
+      base64:bWNj:
+        contributor_id: base64:bWNj
+        contributor_name: mcc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 4
+      base64:bWVj:
+        contributor_id: base64:bWVj
+        contributor_name: mec
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 5
+      base64:bmM=:
+        contributor_id: base64:bmM=
+        contributor_name: nc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:c2w=:
+        contributor_id: base64:c2w=
+        contributor_name: sl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 27
+      base64:c3A=:
+        contributor_id: base64:c3A=
+        contributor_name: sp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 5
+      base64:cGc=:
+        contributor_id: base64:cGc=
+        contributor_name: pg
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 61
+      base64:cGdh:
+        contributor_id: base64:cGdh
+        contributor_name: pga
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:cHI=:
+        contributor_id: base64:cHI=
+        contributor_name: pr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 342
+      base64:cmI=:
+        contributor_id: base64:cmI=
+        contributor_name: rb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 17
+      base64:cmpk:
+        contributor_id: base64:cmpk
+        contributor_name: rjd
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:cmw=:
+        contributor_id: base64:cmw=
+        contributor_name: rl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:cnlubA==:
+        contributor_id: base64:cnlubA==
+        contributor_name: rynl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 9
+      base64:dGI=:
+        contributor_id: base64:dGI=
+        contributor_name: tb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 67
+      base64:dHQ=:
+        contributor_id: base64:dHQ=
+        contributor_name: tt
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 3
+      base64:dnc=:
+        contributor_id: base64:dnc=
+        contributor_name: vw
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 12
+    deprecated_class_count: 426
+    deprecated_property_count: 0
+    distinct_synonym_count: 4882
+    edge_count_by_predicate:
+      BFO:0000050:
+        facet: BFO:0000050
+        filtered_count: 1986
+      BFO:0000051:
+        facet: BFO:0000051
+        filtered_count: 198
+      RO:0000053:
+        facet: RO:0000053
+        filtered_count: 2
+      RO:0002007:
+        facet: RO:0002007
+        filtered_count: 108
+      RO:0002008:
+        facet: RO:0002008
+        filtered_count: 4
+      RO:0002131:
+        facet: RO:0002131
+        filtered_count: 39
+      RO:0002160:
+        facet: RO:0002160
+        filtered_count: 274
+      RO:0002162:
+        facet: RO:0002162
+        filtered_count: 102
+      RO:0002215:
+        facet: RO:0002215
+        filtered_count: 492
+      RO:0002216:
+        facet: RO:0002216
+        filtered_count: 303
+      RO:0002220:
+        facet: RO:0002220
+        filtered_count: 26
+      rdfs:subClassOf:
+        facet: rdfs:subClassOf
+        filtered_count: 4678
+    equivalent_classes_axiom_count: 958
+    id: cellular_component
+    mapping_statement_count_by_predicate:
+      oio:hasDbXref:
+        facet: oio:hasDbXref
+        filtered_count: 528
+    merged_class_query: 0
+    named_individual_count: 0
+    non_deprecated_class_count: 4043
+    object_property_count: 0
+    rdf_triple_count: 44971
+    subclass_of_axiom_count: 8597
+    subset_count: 15
+    synonym_statement_count: 5072
+    synonym_statement_count_by_predicate:
+      oio:hasBroadSynonym:
+        facet: oio:hasBroadSynonym
+        filtered_count: 223
+      oio:hasExactSynonym:
+        facet: oio:hasExactSynonym
+        filtered_count: 3076
+      oio:hasNarrowSynonym:
+        facet: oio:hasNarrowSynonym
+        filtered_count: 1058
+      oio:hasRelatedSynonym:
+        facet: oio:hasRelatedSynonym
+        filtered_count: 633
+  external:
+    annotation_property_count: 1
+    class_count: 0
+    class_count_with_text_definitions: 0
+    class_count_without_text_definitions: 0
+    contributor_summary:
+      base64:Y2pt:
+        contributor_id: base64:Y2pt
+        contributor_name: cjm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+    deprecated_class_count: 0
+    deprecated_property_count: 0
+    distinct_synonym_count: 1
+    equivalent_classes_axiom_count: 0
+    id: external
+    mapping_statement_count_by_predicate:
+      oio:hasDbXref:
+        facet: oio:hasDbXref
+        filtered_count: 82
+    merged_class_query: 0
+    named_individual_count: 0
+    non_deprecated_class_count: 0
+    object_property_count: 81
+    rdf_triple_count: 840
+    subclass_of_axiom_count: 0
+    subset_count: 0
+    synonym_statement_count: 1
+    synonym_statement_count_by_predicate:
+      oio:hasRelatedSynonym:
+        facet: oio:hasRelatedSynonym
+        filtered_count: 1
+  gene_ontology:
+    annotation_property_count: 0
+    class_count: 0
+    class_count_with_text_definitions: 0
+    class_count_without_text_definitions: 0
+    deprecated_class_count: 0
+    deprecated_property_count: 0
+    distinct_synonym_count: 0
+    equivalent_classes_axiom_count: 0
+    id: gene_ontology
+    mapping_statement_count_by_predicate:
+      oio:hasDbXref:
+        facet: oio:hasDbXref
+        filtered_count: 3
+    merged_class_query: 0
+    named_individual_count: 0
+    non_deprecated_class_count: 0
+    object_property_count: 3
+    rdf_triple_count: 30
+    subclass_of_axiom_count: 0
+    subset_count: 0
+    synonym_statement_count: 0
+  molecular_function:
+    annotation_property_count: 0
+    class_count: 12436
+    class_count_by_subset:
+      obo:go#gocheck_do_not_annotate:
+        facet: obo:go#gocheck_do_not_annotate
+        filtered_count: 14
+      obo:go#gocheck_do_not_manually_annotate:
+        facet: obo:go#gocheck_do_not_manually_annotate
+        filtered_count: 1
+      obo:go#goslim_agr:
+        facet: obo:go#goslim_agr
+        filtered_count: 16
+      obo:go#goslim_candida:
+        facet: obo:go#goslim_candida
+        filtered_count: 23
+      obo:go#goslim_chembl:
+        facet: obo:go#goslim_chembl
+        filtered_count: 158
+      obo:go#goslim_drosophila:
+        facet: obo:go#goslim_drosophila
+        filtered_count: 53
+      obo:go#goslim_flybase_ribbon:
+        facet: obo:go#goslim_flybase_ribbon
+        filtered_count: 14
+      obo:go#goslim_generic:
+        facet: obo:go#goslim_generic
+        filtered_count: 40
+      obo:go#goslim_metagenomics:
+        facet: obo:go#goslim_metagenomics
+        filtered_count: 36
+      obo:go#goslim_mouse:
+        facet: obo:go#goslim_mouse
+        filtered_count: 14
+      obo:go#goslim_pir:
+        facet: obo:go#goslim_pir
+        filtered_count: 70
+      obo:go#goslim_plant:
+        facet: obo:go#goslim_plant
+        filtered_count: 26
+      obo:go#goslim_synapse:
+        facet: obo:go#goslim_synapse
+        filtered_count: 43
+      obo:go#goslim_yeast:
+        facet: obo:go#goslim_yeast
+        filtered_count: 41
+      obo:go#prokaryote_subset:
+        facet: obo:go#prokaryote_subset
+        filtered_count: 33
+    class_count_with_text_definitions: 12436
+    class_count_without_text_definitions: 0
+    contributor_summary:
+      base64:Y2pt:
+        contributor_id: base64:Y2pt
+        contributor_name: cjm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:Y3Jkcw==:
+        contributor_id: base64:Y3Jkcw==
+        contributor_name: crds
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:YWI=:
+        contributor_id: base64:YWI=
+        contributor_name: ab
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 3
+      base64:YWk=:
+        contributor_id: base64:YWk=
+        contributor_name: ai
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 137
+      base64:YWw=:
+        contributor_id: base64:YWw=
+        contributor_name: al
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 29
+      base64:YmM=:
+        contributor_id: base64:YmM=
+        contributor_name: bc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 6
+      base64:YmY=:
+        contributor_id: base64:YmY=
+        contributor_name: bf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 303
+      base64:Ymht:
+        contributor_id: base64:Ymht
+        contributor_name: bhm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 12
+      base64:ZG9z:
+        contributor_id: base64:ZG9z
+        contributor_name: dos
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 48
+      base64:ZGhs:
+        contributor_id: base64:ZGhs
+        contributor_name: dhl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 54
+      base64:ZHBo:
+        contributor_id: base64:ZHBo
+        contributor_name: dph
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 227
+      base64:a212:
+        contributor_id: base64:a212
+        contributor_name: kmv
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 16
+      base64:a3Jj:
+        contributor_id: base64:a3Jj
+        contributor_name: krc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 169
+      base64:aGE=:
+        contributor_id: base64:aGE=
+        contributor_name: ha
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:aGFs:
+        contributor_id: base64:aGFs
+        contributor_name: hal
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 3
+      base64:aGpk:
+        contributor_id: base64:aGpk
+        contributor_name: hjd
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 223
+      base64:amlk:
+        contributor_id: base64:amlk
+        contributor_name: jid
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:amw=:
+        contributor_id: base64:amw=
+        contributor_name: jl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 117
+      base64:bHI=:
+        contributor_id: base64:bHI=
+        contributor_name: lr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:bWFo:
+        contributor_id: base64:bWFo
+        contributor_name: mah
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 195
+      base64:bWNj:
+        contributor_id: base64:bWNj
+        contributor_name: mcc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 5
+      base64:bWVj:
+        contributor_id: base64:bWVj
+        contributor_name: mec
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:bXI=:
+        contributor_id: base64:bXI=
+        contributor_name: mr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 11
+      base64:bXM=:
+        contributor_id: base64:bXM=
+        contributor_name: ms
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:bmM=:
+        contributor_id: base64:bmM=
+        contributor_name: nc
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:c2FydA==:
+        contributor_id: base64:c2FydA==
+        contributor_name: sart
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:c2pw:
+        contributor_id: base64:c2pw
+        contributor_name: sjp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:c2w=:
+        contributor_id: base64:c2w=
+        contributor_name: sl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 26
+      base64:c3A=:
+        contributor_id: base64:c3A=
+        contributor_name: sp
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 11
+      base64:cG0=:
+        contributor_id: base64:cG0=
+        contributor_name: pm
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:cGY=:
+        contributor_id: base64:cGY=
+        contributor_name: pf
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 1
+      base64:cGc=:
+        contributor_id: base64:cGc=
+        contributor_name: pg
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 372
+      base64:cGdh:
+        contributor_id: base64:cGdh
+        contributor_name: pga
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 6
+      base64:cHI=:
+        contributor_id: base64:cHI=
+        contributor_name: pr
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 126
+      base64:cmI=:
+        contributor_id: base64:cmI=
+        contributor_name: rb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 6
+      base64:cmw=:
+        contributor_id: base64:cmw=
+        contributor_name: rl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 5
+      base64:cnlubA==:
+        contributor_id: base64:cnlubA==
+        contributor_name: rynl
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 9
+      base64:dGI=:
+        contributor_id: base64:dGI=
+        contributor_name: tb
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 119
+      base64:dHQ=:
+        contributor_id: base64:dHQ=
+        contributor_name: tt
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 9
+      base64:dWg=:
+        contributor_id: base64:dWg=
+        contributor_name: uh
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+      base64:dnc=:
+        contributor_id: base64:dnc=
+        contributor_name: vw
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 18
+    deprecated_class_count: 1168
+    deprecated_property_count: 0
+    distinct_synonym_count: 28522
+    edge_count_by_predicate:
+      BFO:0000050:
+        facet: BFO:0000050
+        filtered_count: 952
+      BFO:0000051:
+        facet: BFO:0000051
+        filtered_count: 225
+      BFO:0000066:
+        facet: BFO:0000066
+        filtered_count: 57
+      RO:0000057:
+        facet: RO:0000057
+        filtered_count: 20863
+      RO:0002160:
+        facet: RO:0002160
+        filtered_count: 45
+      RO:0002162:
+        facet: RO:0002162
+        filtered_count: 83
+      RO:0002211:
+        facet: RO:0002211
+        filtered_count: 52
+      RO:0002212:
+        facet: RO:0002212
+        filtered_count: 63
+      RO:0002213:
+        facet: RO:0002213
+        filtered_count: 54
+      RO:0002233:
+        facet: RO:0002233
+        filtered_count: 945
+      RO:0002234:
+        facet: RO:0002234
+        filtered_count: 1
+      RO:0002334:
+        facet: RO:0002334
+        filtered_count: 11
+      RO:0002342:
+        facet: RO:0002342
+        filtered_count: 2
+      RO:0004009:
+        facet: RO:0004009
+        filtered_count: 497
+      rdfs:subClassOf:
+        facet: rdfs:subClassOf
+        filtered_count: 13769
+    equivalent_classes_axiom_count: 2049
+    id: molecular_function
+    mapping_statement_count_by_predicate:
+      oio:hasDbXref:
+        facet: oio:hasDbXref
+        filtered_count: 22980
+    merged_class_query: 0
+    named_individual_count: 0
+    non_deprecated_class_count: 11268
+    object_property_count: 0
+    rdf_triple_count: 168252
+    subclass_of_axiom_count: 37748
+    subset_count: 15
+    synonym_statement_count: 29729
+    synonym_statement_count_by_predicate:
+      oio:hasBroadSynonym:
+        facet: oio:hasBroadSynonym
+        filtered_count: 1594
+      oio:hasExactSynonym:
+        facet: oio:hasExactSynonym
+        filtered_count: 7538
+      oio:hasNarrowSynonym:
+        facet: oio:hasNarrowSynonym
+        filtered_count: 2684
+      oio:hasRelatedSynonym:
+        facet: oio:hasRelatedSynonym
+        filtered_count: 17205
+  sequence:
+    annotation_property_count: 0
+    class_count: 106
+    class_count_by_subset:
+      obo:so#Alliance_of_Genome_Resources:
+        facet: obo:so#Alliance_of_Genome_Resources
+        filtered_count: 3
+      obo:so#SOFA:
+        facet: obo:so#SOFA
+        filtered_count: 60
+      obo:so#biosapiens:
+        facet: obo:so#biosapiens
+        filtered_count: 6
+    class_count_with_text_definitions: 106
+    class_count_without_text_definitions: 0
+    contributor_summary:
+      base64:ZGF2aWQ=:
+        contributor_id: base64:ZGF2aWQ=
+        contributor_name: david
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 10
+      base64:a2FyZW5laWxiZWNr:
+        contributor_id: base64:a2FyZW5laWxiZWNr
+        contributor_name: kareneilbeck
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 16
+      base64:bmljb2xl:
+        contributor_id: base64:bmljb2xl
+        contributor_name: nicole
+        role_counts:
+          oio:created_by:
+            facet: oio:created_by
+            filtered_count: 2
+    deprecated_class_count: 1
+    deprecated_property_count: 0
+    distinct_synonym_count: 210
+    edge_count_by_predicate:
+      rdfs:subClassOf:
+        facet: rdfs:subClassOf
+        filtered_count: 114
+    equivalent_classes_axiom_count: 0
+    id: sequence
+    mapping_statement_count_by_predicate:
+      oio:hasDbXref:
+        facet: oio:hasDbXref
+        filtered_count: 34
+    merged_class_query: 0
+    named_individual_count: 0
+    non_deprecated_class_count: 105
+    object_property_count: 0
+    rdf_triple_count: 1097
+    subclass_of_axiom_count: 114
+    subset_count: 3
+    synonym_statement_count: 233
+    synonym_statement_count_by_predicate:
+      oio:hasBroadSynonym:
+        facet: oio:hasBroadSynonym
+        filtered_count: 10
+      oio:hasExactSynonym:
+        facet: oio:hasExactSynonym
+        filtered_count: 188
+      oio:hasNarrowSynonym:
+        facet: oio:hasNarrowSynonym
+        filtered_count: 2
+      oio:hasRelatedSynonym:
+        facet: oio:hasRelatedSynonym
+        filtered_count: 15
+was_generated_by:
+  acted_on_behalf_of: cjm
+  started_at_time: '2023-01-08T18:38:47.690172'
+  was_associated_with: OAK

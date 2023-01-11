@@ -1,0 +1,124 @@
+id: https://w3id.org/linkml/render/stylesheet
+name: linkml-render-style
+description: >-
+  A data model for styling and configuring the rendering if LinkML data.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  dcterms: http://purl.org/dc/terms/
+  style: https://w3id.org/linkml/render/
+imports:
+  - linkml:types
+default_prefix: style
+
+classes:
+  Configuration:
+    description: >-
+      A configuration for rendering instances of a LinkML model
+    attributes:
+      frameworks:
+        description: >-
+          The target frameworks. Note that for HTML, currently Bootstrap is assumed.
+        range: HTMLFramework
+        multivalued: true
+      rules:
+        description: >-
+          List of rendering rules.
+        range: RenderRule
+        multivalued: true
+      include_diagrams:
+        description: >-
+          If true, include a diagram at the top of the document. Currently only mermaid supported.
+        range: boolean
+
+
+  RenderRule:
+    description: >-
+      A rule for rendering a particular element
+    attributes:
+      name:
+        description: Optional name of the rule
+      applies_to_slots:
+        description: >-
+          List of slots that this rule applies to. If empty, applies to all slots.
+        range: SlotName
+        multivalued: true
+      applies_to_curies:
+        description: >-
+          List of curies that this rule applies to. If empty, applies to all curies.
+        range: uriorcurie
+        multivalued: true
+      applies_to_render_types:
+        range: RenderType
+        multivalued: true
+      render_as:
+        description: >-
+          The type of element to render this as
+        range: RenderElementType
+      fstring:
+        description: >-
+          A python fstring template that is used to render the value of the slot
+        range: string
+      template:
+        description: >-
+          A Jinja template string that is used to render the value of the slot
+        range: string
+
+types:
+  SlotName:
+    typeof: string
+
+enums:
+  RenderType:
+    description: >-
+      The format or type of the rendered output.
+    permissible_values:
+      HTML:
+      MARKDOWN:
+      MERMAID:
+  HTMLFramework:
+    description: >-
+      The target HTML framework, for HTML RenderType only
+    permissible_values:
+      Bootstrap:
+      Tailwind:
+
+  Shape:
+    description: >-
+      The shape of the rendered element, for diagram rendering
+    permissible_values:
+      SQUARE:
+      ROUNDED_SQUARE:
+      CIRCLE:
+      DIAMOND:
+
+  LineStyle:
+    description: >-
+      The line style of the rendered element, for diagram rendering
+    permissible_values:
+      SOLID:
+      DASHED:
+      DOTTED:
+      DOUBLE:
+  RenderElementType:
+    description: >-
+      The logical type of rendering element, such as a description list or a table
+    permissible_values:
+      heading:
+      h1:
+        is_a: heading
+      h2:
+        is_a: heading
+      h3:
+        is_a: heading
+      description_list:
+        description: description list
+      simple_list:
+        description: simple list
+      table:
+        description: table
+      TUPLE:
+        comments:
+          - not actually an HTML element
+      NO_ELEMENT:
+        description: >-
+          No rendering

@@ -1,0 +1,6 @@
+include_diagrams: true
+rules:
+  - applies_to_slots:
+      - persons
+      - organizations
+    render_as: description_list

@@ -1,0 +1,9 @@
+include_diagrams: true
+rules:
+  - applies_to_slots:
+      - has_employment_history
+      - has_familial_relationships
+      - has_medical_history
+      - diagnosis
+      - procedure
+    render_as: TUPLE
