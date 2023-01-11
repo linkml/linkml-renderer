@@ -41,6 +41,8 @@ When this library matures, the python documentation will be linked from the main
 
 For now, see the docstrings directly in the source, and the test folder for examples.
 
+See minimal sphinx docs: https://linkml.github.io/linkml-renderer
+
 ## Output types
 
 - HTML
