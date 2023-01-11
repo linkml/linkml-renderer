@@ -21,10 +21,10 @@ class PathComponent:
     element_type: ElementName
     """The type which the path component instantiates"""
 
-    slot: SlotDefinition = None
+    slot: Optional[SlotDefinition] = None
     """The slot that points to the path component"""
 
-    index: Union[int, str] = None
+    index: Optional[Union[int, str]] = None
     """For multivalued slots, the index of the value"""
 
     @property
@@ -118,12 +118,14 @@ class Context:
         c.target_path = deepcopy(self.target_path)
         return c
 
-    def extend(self, slot: SlotDefinition = None, target_element: Any = None) -> "Context":
+    def extend(
+        self, slot: Optional[SlotDefinition] = None, target_element: Any = None
+    ) -> "Context":
         new_context = self._copy()
         if slot:
             component = PathComponent(slot=slot, element_type=slot.range)
-            range_element = slot.range
-            new_context.element_name = range_element
+            # range_element = slot.range
+            # new_context.element_name = range_element
             new_context.source_path.append(component)
         if target_element:
             new_context.target_path.append(target_element)

@@ -1,6 +1,6 @@
 """Rendering of LinkML instances as HTML."""
 import logging
-from typing import Any, List, Tuple, Union
+from typing import Any, List, Optional, Tuple, Union
 
 from airium import Airium
 from linkml_runtime import SchemaView
@@ -46,7 +46,7 @@ class HTMLRenderer(Renderer):
         self,
         element: LINKML_INSTANCE,
         schemaview: SchemaView,
-        source_element_name: str = None,
+        source_element_name: Optional[str] = None,
         **kwargs,
     ) -> str:
         """

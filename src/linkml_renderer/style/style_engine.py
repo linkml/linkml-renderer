@@ -25,6 +25,8 @@ class StyleEngine:
         slots = [s for s in sv.class_induced_slots(class_name) if sv.get_uri(s.name) in curies]
         if slots:
             return slots[0].name
+        else:
+            return None
 
     def title_slot(self, class_name: ClassDefinitionName) -> Optional[SlotDefinitionName]:
         return self.slot_by_curie(class_name, ["dcterms:title"])
@@ -47,3 +49,4 @@ class StyleEngine:
         for rule in self.configuration.rules:
             if slot_name in rule.applies_to_slots:
                 return rule.render_as
+        return None

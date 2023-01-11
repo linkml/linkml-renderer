@@ -1,7 +1,7 @@
 import logging
 from dataclasses import dataclass, field
 from io import StringIO
-from typing import Any, List, Tuple, Union
+from typing import Any, List, Optional, Tuple, Union
 
 from linkml_runtime import SchemaView
 from linkml_runtime.utils.yamlutils import YAMLRoot
@@ -39,7 +39,7 @@ class MarkdownWriter:
     def block(self, text: str):
         self.s.write(f"\n{text}\n\n")
 
-    def link(self, url: str, text: str = None):
+    def link(self, url: str, text: Optional[str] = None):
         self.s.write(f"[{text or url}]({url})")
 
     def table_header(self, cols):
@@ -83,16 +83,28 @@ class MarkdownRenderer(Renderer):
         self,
         element: Union[YAMLRoot, BaseModel],
         schemaview: SchemaView,
-        source_element_name: str = None,
+        source_element_name: Optional[str] = None,
         **kwargs,
     ) -> str:
         """
         Dump a YAMLRoot object to markdown.
 
-        :param element:
-        :param schemaview:
-        :param kwargs:
-        :return:
+        To generate HTML for a YAMLRoot object, use the :func:`~MarkdownRenderer.render` method:
+
+        >>> from linkml_renderer.renderers.html_renderer import MarkdownRenderer
+        >>> from linkml_runtime import SchemaView
+        >>> import yaml
+        >>> sv = SchemaView('my-schema.yaml')
+        >>> renderer = MarkdownRenderer()
+        >>> with open('my-instance.yaml') as f:
+        >>>     instance = yaml.load(f)
+        >>>     print(renderer.render(instance, sv))
+
+        :param element: LinkML instance to render
+        :param schemaview: SchemaView which the element conforms to
+        :param source_element_name: Root element name, inferred from tree_root if not present
+        :param kwargs: additional args
+        :return: Markdown string
         """
         ctxt = MarkdownContext(schemaview=schemaview)
         if source_element_name:

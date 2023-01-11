@@ -1,8 +1,8 @@
 """Base class for renderers that render LinkML instances to a format such as HTML, Markdown, etc."""
-from abc import ABC
+from abc import ABC, abstractmethod
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, List, Optional, Union
 
 from linkml_runtime import SchemaView
 from linkml_runtime.linkml_model import ClassDefinition, SlotDefinition
@@ -25,7 +25,7 @@ class AttributeBlock:
     attributes: List[SlotDefinition]
     """Ordering of attributes within a block."""
 
-    title: str = None
+    title: Optional[str] = None
     """Display title for the block."""
 
     def __repr__(self):
@@ -38,24 +38,25 @@ class Renderer(ABC):
     Base class for engines that render LinkML instances to a format such as HTML, Markdown, etc.
     """
 
-    style_engine: StyleEngine = None
-    """Configuration for mappings between schema elements and render engine elements"""
+    style_engine: Optional[StyleEngine] = None
+    """Configuration for mappings between schema elements and render engine elements."""
 
+    @abstractmethod
     def render(
         self,
         element: LINKML_INSTANCE,
         schemaview: SchemaView,
-        source_element_name: str = None,
+        source_element_name: Optional[str] = None,
         **kwargs,
     ) -> str:
         """
         Render an element and all its children.
 
-        :param element: Element to render
-        :param schemaview:
-        :param source_element_name:
-        :param kwargs:
-        :return:
+        :param element: LinkML instance to render
+        :param schemaview: SchemaView which the element conforms to
+        :param source_element_name: Root element name, inferred from tree_root if not present
+        :param kwargs: additional args
+        :return: rendering as a string
         """
         raise NotImplementedError
 

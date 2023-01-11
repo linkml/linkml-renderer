@@ -41,7 +41,11 @@ class MermaidWriter:
         self.s.write(f"    {text}\n")
 
     def entity(
-        self, id: str, text: str = None, shape: Shape = None, right_side_shape: Shape = None
+        self,
+        id: str,
+        text: Optional[str] = None,
+        shape: Optional[Shape] = None,
+        right_side_shape: Optional[Shape] = None,
     ):
         if shape is None:
             shape = Shape.ROUNDED_SQUARE
@@ -51,7 +55,7 @@ class MermaidWriter:
         right = SHAPE_MAP.get(right_side_shape)[1]
         self.line(f"{id}{left}{text}{right}")
 
-    def edge(self, id: str, rel: Optional[str], obj: str, style: LineStyle = None):
+    def edge(self, id: str, rel: Optional[str], obj: str, style: Optional[LineStyle] = None):
         if style == LineStyle.DASHED:
             repr = "-.-"
         elif style == LineStyle.DOUBLE:
@@ -86,16 +90,28 @@ class MermaidRenderer(Renderer):
         self,
         element: LINKML_INSTANCE,
         schemaview: SchemaView,
-        source_element_name: str = None,
+        source_element_name: Optional[str] = None,
         **kwargs,
     ) -> str:
         """
         Dump a YAMLRoot object to mermaid.
 
-        :param element:
-        :param schemaview:
-        :param kwargs:
-        :return:
+        To generate HTML for a YAMLRoot object, use the :func:`~MermaidRenderer.render` method:
+
+        >>> from linkml_renderer.renderers.html_renderer import MarkdownRenderer
+        >>> from linkml_runtime import SchemaView
+        >>> import yaml
+        >>> sv = SchemaView('my-schema.yaml')
+        >>> renderer = MermaidRenderer()
+        >>> with open('my-instance.yaml') as f:
+        >>>     instance = yaml.load(f)
+        >>>     print(renderer.render(instance, sv))
+
+        :param element: LinkML instance to render
+        :param schemaview: SchemaView which the element conforms to
+        :param source_element_name: Root element name, inferred from tree_root if not present
+        :param kwargs: additional args
+        :return: mermaid serialization of the element as a string
         """
         ctxt = MermaidContext(schemaview=schemaview)
         if source_element_name:
