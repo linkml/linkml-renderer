@@ -8,7 +8,7 @@ from linkml_runtime.utils.yamlutils import YAMLRoot
 from pydantic import BaseModel
 
 from linkml_renderer.paths.context import Context
-from linkml_renderer.renderers.renderer import Renderer, _dict, _empty
+from linkml_renderer.renderers.renderer import LINKML_INSTANCE, Renderer, _dict, _empty
 from linkml_renderer.style.model import LineStyle, Shape
 
 logger = logging.getLogger(__name__)
@@ -76,7 +76,7 @@ class MermaidContext(Context):
 @dataclass
 class MermaidRenderer(Renderer):
     """
-    A renderer that generates mermaid
+    A renderer that generates mermaid.
     """
 
     element_to_id: Dict[str, str] = field(default_factory=lambda: {})
@@ -84,7 +84,7 @@ class MermaidRenderer(Renderer):
 
     def render(
         self,
-        element: Union[YAMLRoot, BaseModel],
+        element: LINKML_INSTANCE,
         schemaview: SchemaView,
         source_element_name: str = None,
         **kwargs,

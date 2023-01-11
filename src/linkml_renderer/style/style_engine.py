@@ -4,7 +4,7 @@ from typing import List, Optional, Union
 from linkml_runtime import SchemaView
 from linkml_runtime.linkml_model import ClassDefinitionName, SlotDefinitionName
 
-from src.linkml_renderer.style.model import Configuration, RenderElementType, RenderRule
+from linkml_renderer.style.model import Configuration, RenderElementType, RenderRule
 
 SLOT_NAME = Union[SlotDefinitionName, str]
 

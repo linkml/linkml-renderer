@@ -1,4 +1,3 @@
-docs/
 *.old
 tests/*/output/
 .idea

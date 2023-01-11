@@ -65,7 +65,18 @@ class MarkdownContext(Context):
 @dataclass
 class MarkdownRenderer(Renderer):
     """
-    A renderer that generates Markdown
+    A renderer that generates Markdown.
+
+    To generate Markdown for a LinkML object, use the :func:`~MarkdownRenderer.render` method:
+
+    >>> from linkml_renderer.renderers.html_renderer import HTMLRenderer
+    >>> from linkml_runtime import SchemaView
+    >>> import yaml
+    >>> sv = SchemaView('my-schema.yaml')
+    >>> renderer = MarkdownRenderer()
+    >>> with open('my-instance.yaml') as f:
+    >>>     instance = yaml.load(f)
+    >>>     print(renderer.render(instance, sv))
     """
 
     def render(

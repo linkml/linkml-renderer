@@ -1,7 +1,8 @@
 """Base class for renderers that render LinkML instances to a format such as HTML, Markdown, etc."""
+from abc import ABC
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import Any, List, Union
+from typing import Any, Dict, List, Union
 
 from linkml_runtime import SchemaView
 from linkml_runtime.linkml_model import ClassDefinition, SlotDefinition
@@ -10,6 +11,8 @@ from pydantic import BaseModel
 
 from linkml_renderer.paths.context import Context
 from linkml_renderer.style.style_engine import StyleEngine
+
+LINKML_INSTANCE = Union[YAMLRoot, BaseModel, Dict[str, Any]]
 
 
 @dataclass
@@ -30,7 +33,7 @@ class AttributeBlock:
 
 
 @dataclass
-class Renderer:
+class Renderer(ABC):
     """
     Base class for engines that render LinkML instances to a format such as HTML, Markdown, etc.
     """
@@ -40,7 +43,7 @@ class Renderer:
 
     def render(
         self,
-        element: Union[YAMLRoot, BaseModel],
+        element: LINKML_INSTANCE,
         schemaview: SchemaView,
         source_element_name: str = None,
         **kwargs,
@@ -48,7 +51,7 @@ class Renderer:
         """
         Render an element and all its children.
 
-        :param element:
+        :param element: Element to render
         :param schemaview:
         :param source_element_name:
         :param kwargs:

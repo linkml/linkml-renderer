@@ -9,9 +9,8 @@ from pydantic import BaseModel
 
 from linkml_renderer.paths.html_context import HTMLContext
 from linkml_renderer.renderers.mermaid_renderer import MermaidRenderer
-from linkml_renderer.renderers.renderer import Renderer, _dict, _empty
+from linkml_renderer.renderers.renderer import LINKML_INSTANCE, Renderer, _dict, _empty
 from linkml_renderer.style.model import RenderElementType
-from linkml_renderer.style.style_engine import StyleEngine
 
 BOOTSTRAP_VERSION = "5.3.0-alpha1"
 
@@ -22,14 +21,30 @@ logger = logging.getLogger(__name__)
 
 class HTMLRenderer(Renderer):
     """
-    A renderer that generates HTML
-    """
+    A renderer that generates HTML.
 
-    style_engine: StyleEngine = None
+    To generate HTML for a YAMLRoot object, use the :func:`~HTMLRenderer.render` method:
+
+    >>> from linkml_renderer.renderers.html_renderer import HTMLRenderer
+    >>> from linkml_runtime import SchemaView
+    >>> import yaml
+    >>> sv = SchemaView('my-schema.yaml')
+    >>> renderer = HTMLRenderer()
+    >>> with open('my-instance.yaml') as f:
+    >>>     instance = yaml.load(f)
+    >>>     print(renderer.render(instance, sv))
+
+    This method can be configured using a :class:`~linkml_renderer.style.model.Configuration` object
+
+    >>> from linkml_renderer.style.style_engine import StyleEngine
+    >>> se = StyleEngine(sv, configuration = my_config)
+    >>> renderer.style_engine = se
+
+    """
 
     def render(
         self,
-        element: Union[YAMLRoot, BaseModel],
+        element: LINKML_INSTANCE,
         schemaview: SchemaView,
         source_element_name: str = None,
         **kwargs,
@@ -37,10 +52,16 @@ class HTMLRenderer(Renderer):
         """
         Dump a YAMLRoot object to HTML.
 
-        :param element:
-        :param schemaview:
+        The input may be a YAMLRoot object, a pydantic BaseModel, or a dict. It must conform
+        to the LinkML schema provided via the schemaview argument.
+
+        Passing in a source_element_name is optional if this can be inferred from the schema.
+
+        :param element: instance to render
+        :param schemaview: describes the structure of the instance to render
+        :param source_element_name: name of the element type the instance instantiates.
         :param kwargs:
-        :return:
+        :return: HTML string
         """
         a = Airium()
         ctxt = HTMLContext(airium=a, schemaview=schemaview)
