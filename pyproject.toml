@@ -10,8 +10,7 @@ readme = "README.md"
 python = "^3.8"
 airium = "^0.2.5"
 click = "^8.1.3"
-linkml = "^1.4.1"
-linkml-runtime = "^1.4.1"
+linkml-runtime = ">=1.4.1"
 myst-parser = {version = "^0.18.1", extras = ["docs"]}
 sphinx = {version = "^5.3.0", extras = ["docs"]}
 sphinx-autodoc-typehints = {version = "^1.19.4", extras = ["docs"]}
@@ -22,6 +21,7 @@ sphinx-rtd-theme = {version = "^1.0.0", extras = ["docs"]}
 pytest = "^7.1.2"
 poetry-dynamic-versioning = "^0.21.3"
 tox = "^3.25.1"
+linkml = ">=1.4.1"
 
 [tool.poetry.scripts]
 linkml-render = "linkml_renderer.cli:main"

@@ -1,11 +1,11 @@
 """Command line interface for linkml-html."""
 import json
 import logging
+import os
 import sys
 
 import click
 import yaml
-from linkml.utils.datautils import _get_format
 from linkml_runtime import SchemaView
 
 from linkml_renderer import __version__
@@ -27,6 +27,30 @@ FORMAT_TO_RENDERER = {
     "markdown": MarkdownRenderer,
     "mermaid": MermaidRenderer,
 }
+
+aliases = {
+    "rdf": "ttl",
+    "jsonld": "json-ld",
+}
+
+
+def _get_format(path: str, specified_format: str = None, default=None):
+    if specified_format is None:
+        if path is None:
+            if default is None:
+                raise Exception("Must pass format option OR pass a filename with known file suffix")
+            else:
+                specified_format = default
+        else:
+            _, ext = os.path.splitext(path)
+            if ext is not None:
+                specified_format = ext.replace(".", "")
+            else:
+                raise Exception(f"Must pass format option OR use known file suffix: {path}")
+    specified_format = specified_format.lower()
+    if specified_format in aliases:
+        specified_format = aliases[specified_format]
+    return specified_format
 
 
 @click.command()
