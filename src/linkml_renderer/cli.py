@@ -1,6 +1,7 @@
 """Command line interface for linkml-html."""
 import json
 import logging
+import os
 import sys
 
 import click
@@ -38,7 +39,7 @@ def _get_format(path: str, specified_format: str = None, default=None):
         if path is None:
             if default is None:
                 raise Exception(
-                    f"Must pass format option OR pass a filename with known file suffix"
+                    "Must pass format option OR pass a filename with known file suffix"
                 )
             else:
                 specified_format = default
