@@ -80,6 +80,8 @@ class HTMLRenderer(Renderer):
         :param context:
         :return:
         """
+        if not isinstance(element, (YAMLRoot, BaseModel, dict, list)):
+            return self.generate_atom(element, context)
         if context.source_path is None:
             if isinstance(element, YAMLRoot):
                 root = type(element).class_name
@@ -396,7 +398,8 @@ class HTMLRenderer(Renderer):
         elif et in sv.all_enums():
             a(str(element))
         else:
-            raise ValueError(f"ELEMENT {element}")
+            a(str(element))
+            # raise ValueError(f"ELEMENT {element}")
 
     def generate_reference(self, element: str, context: HTMLContext) -> None:
         """
